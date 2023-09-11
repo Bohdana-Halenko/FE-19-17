@@ -1,0 +1,35 @@
+body{
+    font-size: 20px;
+    margin-left: 100px;
+    /* text-transform: uppercase; */
+}
+.title{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.text{
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: inherit;
+    text-indent: 50px;
+    /* word-spacing: 15px; */
+    /* letter-spacing: -12px; */
+}
+.text-one{
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    font-weight: 700;
+    font-style: italic;
+}
+/* .text-one::first-letter{
+    font-family: 'Roboto Serif', serif;
+    font-size: 40px;
+    color: red;
+    font-style: italic;
+} */
+.text-one::selection{
+    background-color: skyblue;
+    color: gray;
+}
