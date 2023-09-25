@@ -1,0 +1,26 @@
+body{
+    box-sizing: border-box;
+    width: 1200px; 
+    padding: 0 15px;
+    background-color: skyblue;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: fuchsia;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: 10px 50px 30px 60px;
+    padding: 20px 10px;
+    display: none;
+}
+.wrap{
+    display: flex;
+}
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 20px;
+}
