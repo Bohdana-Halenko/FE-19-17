@@ -24,3 +24,23 @@ body{
     border: 5px solid black;
     border-radius: 20px;
 }
+.list{
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.item{
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border: 1px solid;
+    /* margin: 10px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+}
