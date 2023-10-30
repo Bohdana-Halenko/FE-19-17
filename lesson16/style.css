@@ -1,0 +1,90 @@
+html{
+    font-size: 16px;
+}
+.text{
+    background-color: skyblue;
+    width: 600px;
+    font-size: 20px; 
+}
+.one{
+    /* font-weight: 700; */
+   /* font-size: 2rem; */
+   /* font-size: 1em; */
+}
+/* .one::first-letter{
+    color: red;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+} */
+/* .one::first-line{
+ color: red;
+ font-weight: 700;
+} */
+.one::selection{
+    color: green;
+    background-color: coral;
+    font-weight: 700;
+}
+.two{
+    font-size: 1.5rem;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    background-color: skyblue;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    border: 2px solid rgb(101, 178, 246);
+    display: inline-block;
+}
+.link::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: fuchsia;
+    border-radius: 50%;
+}
+
+
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+.item{
+    width: 240px;
+    height: 150px;
+    background-color: rgb(208, 208, 208);
+    border: 1px solid gray;
+    text-align: center;
+}
+.item::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: fuchsia;
+    background-image: url(../lesson16/cat.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item:nth-child(1)::before{
+    background-image: url(../lesson16/tilapia.png);
+}
+
+.bg{
+    width: 400px;
+    height: 400px;
+    /* background-color: yellowgreen; */
+    /* background-image: url(../lesson16/cats.jpg); */
+    /* background-size: 200px;  */
+    /* background-repeat: no-repeat; */
+    /* background-position: left;  */
+    background: url(../lesson16/cats.jpg) center / 200px no-repeat;
+}
