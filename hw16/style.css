@@ -1,0 +1,13 @@
+.bg-box{
+    width: 800px;
+    height: 600px;
+    background-color: green;
+    background-image: url(./img/будинок.jpg),
+    url(./img/green-png-44873.png),
+    url(./img/lamp-png-34914.png),
+    url(./img/58eb07b830eab15b56162788.png),
+    url(./img/3F3F.webp);
+    background-size: 400px, 150px, 30px, 50px, 50px;
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+    background-position: center, bottom, top, top right, top left;
+}
