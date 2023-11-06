@@ -1,0 +1,21 @@
+.box{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to bottom, pink 60%, skyblue 80%,yellow);
+}
+.wrap{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(circle at center, yellow 10%, rgb(255, 111, 0) 70%);
+}
+
+.card{
+    margin: 50px;
+    padding: 20px;
+    width: 400px;
+    background-color: rgb(236, 235, 235);
+    box-shadow: 10px 10px 10px 2px red,
+    20px 20px 10px 2px green, 
+    30px 30px 10px 2px blue;
+}
