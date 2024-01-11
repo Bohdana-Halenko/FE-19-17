@@ -1,32 +1,49 @@
-/* .backdrop{
+.backdrop{
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.20);
 }
 .backdrop.is-hidden{
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-}
-.no-scroll{
-    overflow: hidden;
 }
 .modal{
     position: absolute;
-    left: 50%;
     top: 50%;
-    background-color: white;
+    left: 50%;
     transform: translate(-50%, -50%);
-    padding: 25px;
-    border: 2px solid skyblue;
-    border-radius: 30px;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.input-number:required:valid{
-    
-} */
+.modal-close-button{
+    margin-left: 490px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(./img/symbol-defs.svg#icon-email);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.modal-icon{
+    fill: #000000;
+}
+.modal-icon:hover,
+.modal-icon:focus{
+    fill: #2196F3;
+}
 
 
 

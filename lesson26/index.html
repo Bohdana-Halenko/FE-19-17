@@ -34,11 +34,58 @@
         </label>
         <button type="submit">Click</button>
     </form> -->
+    <button data-modal-open>Замоаити послугу</button>
+    <!-- modal window -->
+    <footer>
 
-    <div>
-      <svg class="icon">
-        <use scr="./img/symbol-def.svg#icon-email"></use>
-      </svg>
+    </footer>
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./img/symbol-defs.svg#icon-email"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="modal-form-field">
+            <label for="name" class="modal-form-label">Ім'я</label>
+            <input type="text" id="name" class="modal-form-input">
+            <svg class="modal-form-icon">
+              <use href="./img/..."></use>
+            </svg>
+          </div>
+          <div class="modal-form-field">
+            <label for="tel" class="modal-form-label">Телефон</label>
+            <input type="tel" id="tel" class="modal-form-input">
+            <svg class="modal-form-icon">
+              <use href="./img/..."></use>
+            </svg>
+          </div>
+          <div class="modal-form-field">
+            <label for="mail" class="modal-form-label">Пошта</label>
+            <input type="email" id="mail" class="modal-form-input">
+            <svg class="modal-form-icon">
+              <use href="./img/..."></use>
+            </svg>
+          </div>
+          <div class="modal-form-field">
+            <label for="coment">Коментар</label>
+            <textarea name="coment" id="coment" rows="10"></textarea>
+          </div>
+
+          <label class="modal-form-policy">
+            <input type="checkbox" class="modal-form-checkbox">
+            <p>Погоджуюся з розсилкою та приймаю 
+              <a href="#">Умови договору</a>
+            </p>
+          </label>
+          <button type="submit" class="agree-btn">Відправити</button>
+        </form>
+      </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
