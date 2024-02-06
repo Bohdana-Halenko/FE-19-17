@@ -3,20 +3,20 @@ ul{
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 10px;
     
 }
 li{
-    /* width: 50px; */
+    width: 200px;
     height: 50px;
     background-color: fuchsia;
     /* border: 1px solid; */
-    flex-basis: calc((100% - 40px) / 5);
+    /* flex-basis: calc((100% - 20px) / 3); */
     /* order: 0; */
     /* flex-grow: 0; */
 }
-/* .one{
+.one{
     order: 2;
 
 }
@@ -24,8 +24,8 @@ li{
     flex-shrink: 10;
 }
 .three{
-    /* background-color: yellow; */
-    /* order: 1;
+    background-color: yellow;
+    order: 1;
 
 }
 .four{
@@ -35,4 +35,4 @@ li{
 .five{
     order: 3;
 
-} */
+}
