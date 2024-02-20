@@ -1,5 +1,9 @@
-header{
-    height: 30px;
-    width: 100%;
-    background-color: aquamarine;
+.header{
+    background-color: $mainColor;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+    &:hover{
+        background-color: aqua;
+    }
 }
