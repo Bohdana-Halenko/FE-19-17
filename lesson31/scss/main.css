@@ -13,6 +13,26 @@ body {
   background-color: aqua;
 }
 
-.box {
-  border-color: red;
+.dog-img {
+  background-image: url(../img/dog.png);
+}
+
+.cat-img {
+  background-image: url(../img/cat.png);
+}
+
+.bird-img {
+  background-image: url(../img/bird.png);
+}
+
+.dog-img {
+  background-image: url(../img/dog.png);
+}
+
+.cat-img {
+  background-image: url(../img/cat.png);
+}
+
+.bird-img {
+  background-image: url(../img/bird.png);
 }/*# sourceMappingURL=main.css.map */

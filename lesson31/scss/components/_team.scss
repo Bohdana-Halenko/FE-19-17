@@ -1,3 +1,87 @@
-.box{
-    border-color: red;
+// %button{
+//     display: inline-block;
+//     padding: 10px 50px;
+//     background-color: lightgrey;
+//     border-radius: 20px;
+//     border: none;
+//     cursor: pointer;
+//     font-size: 26px;
+// }
+// %flex{
+//     display: flex;
+//     justify-content: space-between
+// }
+
+
+// .list{
+//     @extend %flex;
+//     margin-top: 50px;
+// }
+
+// .button-success{
+//     @extend %button;
+//     background-color: green;
+// }
+// .button-error{
+//     @extend %button;
+//     background-color: red;
+// }
+
+
+
+
+// .button,
+// .button-error,
+// .button-success{
+//     display: inline-block;
+//     padding: 10px 50px;
+//     background-color: lightgrey;
+//     border-radius: 20px;
+//     border: none;
+//     cursor: pointer;
+//     font-size: 26px;
+// }
+// .button-success{
+//     background-color: green;
+// }
+// .button-error{
+//     background-color: red;
+// }
+
+// @mixin flex(){
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+
+// .box{
+//     width: 500px;
+//     height: 500px;
+//     border: 1px solid red;
+//     @include flex();
+// }
+// .wrap{
+//     width: 250px;
+//     height: 250px;
+//     background-color: skyblue;
+// }
+
+
+.dog-img{
+    background-image: url(../img/dog.png);
+}
+.cat-img{
+    background-image: url(../img/cat.png);
+}
+.bird-img{
+    background-image: url(../img/bird.png);
+}
+
+
+@each $animal in dog, cat, bird{
+    .#{$animal}-img{
+        background-image: url(../img/#{$animal}.png);
+    }
 }
