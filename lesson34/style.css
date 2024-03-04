@@ -1,0 +1,86 @@
+body{
+    background-color: skyblue;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid red;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: bisque;
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: palevioletred;
+    border: 2px solid fuchsia;
+    margin-bottom: 10px;
+}
+.header{
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (min-width: 480px){
+    .container{
+        width: 480px;
+    }
+    body{
+        background-color: yellowgreen;
+    }
+    .btn{
+        background-color: orange;
+        padding: 10px 35px;
+    }
+}
+@media screen and (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+    body{
+        background-color: orange;
+    }
+    .btn{
+        background-color: green;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    .list{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+    body{
+        background-color: rgb(209, 172, 239);
+    }
+    .btn{
+        border-radius: 30px;
+        background-color: blueviolet;
+    }
+}
