@@ -1,0 +1,36 @@
+/* .wrap{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+@media (max-width: 1199px){
+    .wrap{
+        background-color: violet;
+    }
+}
+@media (max-width: 767px){
+    .wrap{
+        background-color: skyblue;
+    }
+} */
+
+.wrap{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+/* @media (min-width: 768px){
+    .wrap{
+        background-color: yellowgreen;
+    }
+}
+@media (min-width: 1200px){
+    .wrap{
+        background-color: green;
+    }
+} */
+@media (min-width: 768px) and (max-width: 900px){
+    .wrap{
+        border: 5px solid orange;
+    }
+}
