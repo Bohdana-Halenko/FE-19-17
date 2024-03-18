@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #212121;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 35px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+h1{
+    font-size: 26px;
+    font-weight: 600;
+    flex-grow: 1;
+}
+.logo{
+    color: #212121;
+}
+nav{
+    flex-grow: 3;
+}
+.nav_menu{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.nav_menu a,
+.join_block{
+    font-size: 12px;
+    font-weight: 500;
+    color: #212121;
+}
+input[type="checkbox"],
+label{
+    display: none;
+}
+.join_block{
+    flex-grow: 1;
+    text-align: right;
+}
+.join{
+    background-color: transparent;
+    border: none;
+    padding: 0 20px;
+    transition: opacity .3s;
+}
+.started{
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    transition: opacity .3s;
+}
+.join:hover,
+.started:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+
+/* mobile menu */
+@media (max-width: 767px){
+nav{
+    order: 1;
+}
+label{
+    display: block;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+}
+label:hover{
+    cursor: pointer;
+}
+label span{
+    top:15px;
+}
+label span,
+label span::before,
+label span::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    transition: .3s;
+    background-color: #212121;
+}
+label span::before{
+    top: -8px;
+}
+label span::after{
+    top: 8px;
+}
+.nav_menu{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .nav_menu{
+    display: flex;
+    flex-direction: column;
+}
+input[type="checkbox"]:checked ~ label span{
+    transform: rotate(-45deg);
+}
+input[type="checkbox"]:checked ~ label span::before{
+    transform: rotate(0deg);
+    top:0;
+}
+input[type="checkbox"]:checked ~ label span::after{
+    transform: rotate(90deg);
+    top:0;
+}
+.nav_menu{
+    position: absolute;
+    top: 100px;
+    height: 30vh;
+    right: 0;
+    width: 90%;
+    padding: 25px 25px 50px 25px;
+    background-color: lightgrey;
+    box-shadow: 0 12px 8px #ececec;
+}
+}
