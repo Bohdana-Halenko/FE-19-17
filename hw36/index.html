@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- logo -->
+       <!-- nav -->
+       <!-- ul -->
+      </div>
+
+      <!-- mobile menu -->
+      <button
+        class="menu-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg 
+        class="menu-button__open"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-button js-close-menu">
+            <svg class="menu-button__close" >
+                <!-- use -->
+            </svg>
+        </button>
+
+        <div class="menu-box">
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item">
+                            <a href="" class="mobile-nav__link">Студія</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="" class="mobile-nav__link">Портфоліо</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="" class="mobile-nav__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mobile-socials">
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts">
+                        <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts">
+                        <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-socials__list">
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">Instagram</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">Twitter</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">Facebook</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+
+    </header>
+
+    <script src="./mobile-menu.js"></script>
+  </body>
+</html>
