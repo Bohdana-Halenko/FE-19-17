@@ -1,0 +1,15 @@
+.box{
+    width: 420px;
+    height: 280px;
+    background-image: url(./photo.png);
+    background-size: 420px 280px;
+}
+
+@media (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .box{
+        background-image: url(./photo@2x.png);
+    }
+
+} 

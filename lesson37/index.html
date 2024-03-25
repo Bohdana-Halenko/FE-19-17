@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+    <!-- <img 
+    srcset="photo.png 1x, photo@2x.png 2x, photo@3x.png 3x"
+    src="photo.png" 
+    alt="photo">
+
+    <img 
+    srcset="photo-420.png 420w, photo-840.png 840w, photo-1260.png 1260w"
+    src="photo-420.png"
+    sizes="420px" 
+    alt=""> -->
+
+    <picture>
+        <source srcset="photo.png 1x, photo@2x.png 2x, photo@3x.png 3x" type="image/png">
+        <source srcset="photo.webp 1x, photo@2x.webp 2x, photo@3x.webp 3x" type="image/webp">
+        <img src="photo.png" alt="чашка">
+    </picture>
+
+
+    <picture>
+        <source srcset="photo.png" media="(min-width: 400px)">
+        <source srcset="photo@2x.png" media="(min-width: 900px)">
+        <img src="photo.png" alt="">
+    </picture>
+
+
+
+    <!-- <img src="./photo.png" alt="" width="420" height="280">
+    <img src="./photo@2x.png" alt="" width="420" height="280">
+    <img src="./photo@3x.png" alt="" width="420" height="280"> -->
+</body>
+</html>
