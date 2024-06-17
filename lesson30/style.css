@@ -25,7 +25,12 @@
     }
 } */
 
-/* .content{
+
+
+
+
+/* 2 */
+.content{
     padding: 50px;
 }
 .box{
@@ -57,8 +62,15 @@
         left: 300px;
         background-color: orange;
     }
-} */
-img{
+}
+
+
+
+
+
+
+/* 3 */
+/* img{
     animation-name: spin;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -71,4 +83,44 @@ img{
     100%{
         transform: rotate(360deg);
     }
+} */
+
+
+
+
+#circle1 {
+  animation-name: cirlce1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+#circle2 {
+  animation-name: cirlce2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes cirlce1 {
+  from {
+    cy: 0%;
+    fill: none;
+    stroke: grey;
+  }
+  to {
+    cy: 50%;
+    fill: #9284D9;
+    stroke: white;
+  }
+}
+@keyframes cirlce2 {
+  from {
+    cx: 100%;
+    fill: none;
+    stroke: grey;
+  }
+  to {
+    cx: 52%;
+    fill: #9284D9;
+    stroke: white;
+  }
 }
