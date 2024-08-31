@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 5hw -->
+    <!-- 1 -->
+    <form >
+        <select id="drinks" onchange="checkOptions()">
+            <option value="tea">tea</option>
+            <option value="coffee">coffee</option>
+            <option value="juice">juice</option>
+        </select>
+    </form>
+
+    <!-- 2 -->
+    <input type="text" id="text-day" placeholder="week`s day">
+    <button onclick="checkDay()">Send</button>
+
+    <!-- 3 -->
+    <input type="number" min="1" max="12" id="month" placeholder="month">
+    <button onclick="checkMonth()">Send</button>
+
+
+    <!-- 4 -->
+    <input type="number" id="months-days" min="1" max="12">
+    <button onclick="checkDaysInMonth()">Send</button>
+
+    <!-- 5 -->
+    <input type="text" id="color">
+    <button onclick="checkColor()">Send</button>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
