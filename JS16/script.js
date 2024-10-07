@@ -174,22 +174,57 @@
 
 // }
 
-class User{
-    #email;
-    constructor(email) {
-        this.#email = email;
-    }
-    get email() {
-        return this.#email;
-    }
-    set email(newEmail) {
-        this.#email = newEmail;
-    }
-}
+// class User{
+//     #email;
+//     constructor(email) {
+//         this.#email = email;
+//     }
+//     get email() {
+//         return this.#email;
+//     }
+//     set email(newEmail) {
+//         this.#email = newEmail;
+//     }
+// }
 
-class Admin extends User{
-    //
-}
-const admin = new Admin('admin@ukr.net');
-console.log(admin); //Admin {#email: 'admin@ukr.net'}
-console.log(admin.email); // admin@ukr.net
+// class Admin extends User{
+//     //
+// }
+// const admin = new Admin('admin@ukr.net');
+// console.log(admin); //Admin {#email: 'admin@ukr.net'}
+// console.log(admin.email); // admin@ukr.net
+
+
+
+// Наслідування класів
+// class User{
+//     #email;
+//     constructor(email) {
+//         this.#email = email;
+//     }
+
+//     get email() {
+//         return this.#email;
+//     }
+
+//     set email(newEmail) {
+//         this.#email = newEmail; 
+//     }
+// }
+
+// class Admin extends User{
+//     constructor({ email, posts }) {
+//         super(email);
+//         this.posts = posts;
+//     }
+//     addPost(post) {
+//         this.posts.push(post)
+//     }
+// }
+
+// const admin = new Admin({email: 'admin@ukr.net', posts: []});
+// console.log(admin); //Admin {posts: [], #email: 'admin@ukr.net'}
+// // console.log(admin.email);
+// admin.addPost('Новий пост');
+// admin.addPost('Новий пост 2');
+// console.log(admin.posts);  //['Новий пост', 'Новий пост 2']
