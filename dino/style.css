@@ -1,0 +1,73 @@
+.dino{
+    padding-bottom: 36px;
+    width: 720px;
+    margin: 0 auto;
+}
+    .dino__title{
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    }
+   .dino__container{
+        margin-top: 36px;
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        background-color: lightblue;
+    }
+    .dino__results{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    .dino__but{
+        fill: white;
+        color: white;
+        background-color: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 140px;
+        font-size: 20px;
+        cursor: pointer;
+        border: solid 2px;
+        padding: 10px;
+        border-radius: 15px;
+        display: none;
+    }
+    .dino__overlay{
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        padding: 25px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dino__points{
+        right: 0;
+        position: absolute;
+    }
+    .dino__player{
+        width: 50px;
+        height: 60px;
+        transition: all 0.2s;
+        position: absolute;
+        bottom: 15px;
+        left: 100px;
+        background-color: royalblue;
+    }
+    .dino__cactus {
+        width: 32px;
+        height: 50px;
+        transition: all 0.2s;
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        background-color: green;
+    }
