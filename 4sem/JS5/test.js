@@ -19,4 +19,4 @@
 // export { square, diag };
 
 
-export default function one(){...}
+export default function one(){}

@@ -1,0 +1,31 @@
+/* task1 */
+.slider {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .slider__input {
+    width: 100%;
+  }
+  
+  .slider__image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    background-color: coral;
+  }
+#pickMe{
+    text-align: center;
+}
+
+
+
+/* task2 */
+#box{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
