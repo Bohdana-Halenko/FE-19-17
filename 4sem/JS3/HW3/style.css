@@ -1,0 +1,45 @@
+/* 
+task 1
+
+body {
+            font-family: Arial, sans-serif;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        img {
+            background-color: #f0f0f0;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            width: 285px;
+        }
+        img.loaded {
+            opacity: 1;
+        } */
+
+body {
+  font-family: Arial, sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.lazy-img {
+  width: 285px;
+  height: auto;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+.lazy-img.loaded {
+  opacity: 1;
+}
