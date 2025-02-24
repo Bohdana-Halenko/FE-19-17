@@ -1,0 +1,14 @@
+#counter{
+    width: 200px;
+    height: 150px;
+    background-color: skyblue;
+    border: 3px solid rgb(0, 0, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(0, 0, 135);
+    border-radius: 20px;
+    margin: 0 auto;
+}
