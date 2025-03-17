@@ -86,9 +86,23 @@
 // let end = new Date();
 // console.log(`Цикл зайняв ${end - start} мс`);
 
-let start = Date.now();
-for (let i = 0; i < 1000000; i++) {
-  let a = i * i * i;
+// let start = Date.now();
+// for (let i = 0; i < 1000000; i++) {
+//   let a = i * i * i;
+// }
+// let end = Date.now();
+// console.log(`Цикл зайняв ${end - start} мс`);
+
+
+
+
+// 17.03
+function getSecondsToTomorrow() {
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const difMs = tomorrow - now;
+   
+  return Math.floor(difMs / 1000);
+
 }
-let end = Date.now();
-console.log(`Цикл зайняв ${end - start} мс`);
+console.log(getSecondsToTomorrow());
