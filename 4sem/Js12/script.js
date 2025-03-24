@@ -97,12 +97,12 @@
 
 
 // 17.03
-function getSecondsToTomorrow() {
-  const now = new Date();
-  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-  const difMs = tomorrow - now;
+// function getSecondsToTomorrow() {
+//   const now = new Date();
+//   const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+//   const difMs = tomorrow - now;
    
-  return Math.floor(difMs / 1000);
+//   return Math.floor(difMs / 1000);
 
-}
-console.log(getSecondsToTomorrow());
+// }
+// console.log(getSecondsToTomorrow());
