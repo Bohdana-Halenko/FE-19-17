@@ -97,3 +97,6 @@
 // checkEvenNumbers([8, 12, 21, 98, 64, 50])
 //   .then(console.log)
 //   .catch(console.error);
+
+
+
